@@ -1,0 +1,46 @@
+# GIT
+
+    apt-get install git
+
+# MongoDB
+
+    apt-get install mongoDB
+
+# JDK
+
+    ... install oracle java8
+
+# 安装 Ant
+
+    cd ~/Download
+    wget http://apache.fayea.com//ant/binaries/apache-ant-1.9.4-bin.tar.gz
+    ...
+    move to /usr/local/lib
+    ln -s /usr/local/lib/ant/bin/ant ./
+
+
+# 添加 SSH Key 免登陆
+
+    scp id_rsa.pub root@182.92.3.49:~/.ssh/zozoh_mac.pub
+    cd ~/.ssh/
+    cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+    chmod 700 ~/.ssh
+
+# copy 几个常用的 jar 包
+
+    cd /usr/local
+    mkdir jar
+    # 在本地 ..
+    mysql-connector-java-commercial-5.1.33-bin.jar
+    log4j-1.2.15.jar
+    mongo-java-driver-2.9.3.jar
+
+# 编译
+
+    nutz
+    nutz-vfs
+    nutz-web
+    nutzmongo
+    zdoc
+    woods-combine
+    woods-query
